@@ -47,4 +47,6 @@ descartarem corretamente o lixo eletrônico, evitando assim problemas ambientais
 > [!TIP]
 > O endpoint acima é responsável por buscar o id da sessão, garantindo que cada sessão seja única para cada um dos usuários.
 -----
-![bot image](assets/bot-img.jpeg)
+### Exemplo de uso
+https://github.com/user-attachments/assets/5f42a245-dd74-464a-aa7f-0830c7805e4f
+
