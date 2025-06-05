@@ -1,12 +1,12 @@
 from session.session import SessionGen
-from flask import jsonify
+from flask import jsonify, Response
+from typing import Tuple
 
 class SessionController:
-    def __init__():
-        pass
-    def session_trap():
+    @staticmethod
+    def session_trap() -> Tuple[Response, int] :
         try:
-            response = SessionGen.create_session()
+            response: str = SessionGen.create_session()
             return jsonify({"session_id": response}), 200
         except:
             return jsonify({"error: Não foi possivel criar uma sessão"}), 500

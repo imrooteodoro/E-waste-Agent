@@ -1,8 +1,9 @@
 from controllers.sessioncontroller import SessionController
+from flask import Response
+from typing import Tuple
 
 def initsession(app):
     @app.route('/session', methods=['GET'])
-    def connectsession():
+    def connectsession() -> Tuple[Response, int]:
         response = SessionController.session_trap()
-        print(response)
         return  response

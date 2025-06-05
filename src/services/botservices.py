@@ -3,12 +3,10 @@ from auth.auth import authenticate
 
 
 class BotService:
-    def __init__(self):
-        pass
 
-    def connect_agent(system_context, user_message):
+    @staticmethod
+    def connect_agent(system_context:str, user_message:str) -> str:
         genai.configure(api_key = authenticate())
-        # Create the model
         generation_config = {
         "temperature": 1,
         "top_p": 0.95,
